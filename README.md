@@ -1,0 +1,1 @@
+If you want apache in the virtual machine you need to uncomment all the comments in `.puppet/manifests/default.pp` and define an appropriate value for `server_name`.

@@ -1,0 +1,31 @@
+{
+    "name": "doctrine/orm-example",
+    "description": "Doctrine ORM Example",
+    "type": "library",
+    "license": "",
+    "keywords": [
+        "doctrine",
+        "entities"
+    ],
+    "homepage": "http://example.com",
+    "support": {
+        "email": "support@example.com",
+        "irc": "irc://irc.freenode.net/example",
+        "source": "https://example.com",
+        "issues": "https://example.com"
+    },
+    "config": {
+    	"process-timeout": 5000
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev",
+            "dev-develop": "1.1-dev"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zendframework": ">=2.3.1,<3.0.0",
+        "doctrine/doctrine-orm-module": "0.8.0"
+    }
+}
