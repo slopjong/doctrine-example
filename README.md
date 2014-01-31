@@ -1,4 +1,14 @@
+Doctrine example
+================
+
+Vagrant
+-------
+
 If you want apache in the virtual machine you need to uncomment all the comments in `.puppet/manifests/default.pp` and define an appropriate value for `server_name`.
+
+
+MySQL
+-----
 
 To run doctrine commands simply ssh to your box, change to `/vagrant` and execute `./doctrine`. You'll see available commands as listed below.
 
@@ -85,3 +95,12 @@ Database changed
 ```
 
 If you don't want to alter your database, just omit the `--force` parameter and execute the SQL statement at a later time.
+
+SQLite
+------
+
+There's a SQLite example included in this doctrine example. The `bin` directory contains the `run.sh` script which uses `cli-config.php` defining `pdo_sqlite` as the driver and executes internally
+
+```
+vendor/bin/doctrine orm:schema-tool:update --force --dump-sql
+```
